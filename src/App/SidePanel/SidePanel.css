@@ -1,0 +1,9 @@
+#panel{
+    width: 100%;
+}
+
+@media screen and (min-width: 414px) {
+    #panel{
+        width: 408px;
+    }
+}

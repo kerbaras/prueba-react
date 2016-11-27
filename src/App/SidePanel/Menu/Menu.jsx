@@ -1,7 +1,4 @@
-/**
- * Created by matias on 11/26/16.
- */
-import React, { Component } from 'react';
+import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import {List, ListItem} from 'material-ui/List';
 import ContentInbox from 'material-ui/svg-icons/content/inbox';

@@ -25,11 +25,6 @@ const panelStyle = {
     zIndex: 9999
 };
 
-const textStyle = {
-    borderColor: '#fff',
-    color: '#fff'
-}
-
 class SidePanel extends React.Component{
     constructor(props){
         super(props);

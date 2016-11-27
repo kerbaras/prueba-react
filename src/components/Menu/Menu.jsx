@@ -9,7 +9,7 @@ import Divider from 'material-ui/Divider';
 import ActionInfo from 'material-ui/svg-icons/action/info';
 
 const Menu = ({ open, handle }) => (
-    <div>
+    <my-menu>
         <Drawer
             docked={false}
             width={320}
@@ -39,7 +39,7 @@ const Menu = ({ open, handle }) => (
                 <ListItem primaryText="Follow up" rightIcon={<ActionInfo />} />
             </List>
         </Drawer>
-    </div>
+    </my-menu>
 );
 
 export default Menu;

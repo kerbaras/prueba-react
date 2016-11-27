@@ -14,11 +14,11 @@ const lightTheme = getMuiTheme({
     }
 });
 
-const App = () => (
+const App = ({ children }) => (
     <MuiThemeProvider muiTheme={lightTheme}>
         <div>
             <Map />
-            <SidePanel />
+            <SidePanel>{ children }</SidePanel>
         </div>
     </MuiThemeProvider>
 );

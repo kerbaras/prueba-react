@@ -1,6 +1,3 @@
-/**
- * Created by matias on 11/26/16.
- */
 import React from 'react';
 import GoogleMap from 'google-map-react';
 
@@ -19,15 +16,15 @@ const style = {
 };
 
 const Map = () => (
-    <div style={style}>
+    <the-map style={style}>
         <GoogleMap
-            apiKey={apiKey}
+            bootstrapURLKeys={{key: apiKey}}
             defaultCenter={props.center}
             defaultZoom={props.zoom}
             onGoogleApiLoaded={({map, maps}) => console.log(map, maps)}
         >
         </GoogleMap>
-    </div>
+    </the-map>
 );
 
 export default Map;

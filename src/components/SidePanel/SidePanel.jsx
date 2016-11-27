@@ -1,12 +1,8 @@
-/**
- * Created by matias on 11/26/16.
- */
 import React from 'react';
 import muiThemeable from 'material-ui/styles/muiThemeable';
 import Paper from 'material-ui/Paper';
-import Menu from './Menu';
-import TopBar from './TopBar';
-import Directions from './Directions';
+import Menu from '../Menu';
+import TopBar from '../TopBar';
 import './SidePanel.css';
 
 const paperStyle = (muiTheme) => ({
@@ -43,13 +39,13 @@ class SidePanel extends React.Component{
     handleMenu = (menuOpened) => this.setState({ menuOpened });
 
     render = () => (
-        <div id="panel" style={panelStyle}>
+        <side-panel id="panel" style={panelStyle}>
             <Paper style={paperStyle(this.props.muiTheme)} zDepth={2}>
                 <TopBar toggleMenu={this.toggleMenu} />
-                <Directions/>
-            </Paper>
+                { this.props.children }
+                </Paper>
             <Menu handle={this.handleMenu} open={this.state.menuOpened} />
-        </div>
+        </side-panel>
     );
 }
 export default muiThemeable()(SidePanel);

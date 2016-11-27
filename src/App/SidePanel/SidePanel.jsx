@@ -10,19 +10,26 @@ import Directions from './Directions';
 import './SidePanel.css';
 
 const paperStyle = (muiTheme) => ({
+    position: 'absolute',
+    top: 0,
+    left: 0,
     height: '100%',
     width: '100%',
     margin: 0,
     padding: 0,
-    display: 'inline-block',
-    backgroundColor: muiTheme.palette.accent2Color
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: muiTheme.palette.accent2Color,
+    overflow: 'visible',
 });
 
 const panelStyle = {
-    height: '100%',
-    display: 'block',
     position: 'absolute',
-    zIndex: 9999
+    height: '100%',
+    top: 0,
+    left: 0,
+    zIndex: 2,
+    outlineOffset: '-2px',
 };
 
 class SidePanel extends React.Component{

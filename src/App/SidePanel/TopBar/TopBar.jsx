@@ -15,7 +15,8 @@ const styles=(muiTheme) => ({
         height: 48,
         padding: '8px 8px 0',
         display: 'flex',
-        flexDirection: 'row'
+        flexDirection: 'row',
+        flex: 'none'
     },
     hamburger: {
     },
